@@ -13,7 +13,7 @@ $.getJSON("data/cases.json", function (data) {
 
 	for (i in cases) {
 		if (cases[i].qq != 0) {
-			$("#case-list").append(`
+			$("#case-list").prepend(`
             <div class="case">
 				<a href="${cases[i].url}">
 					<img class="case-img" src="${cases[i].mdimg}">
@@ -30,7 +30,7 @@ $.getJSON("data/cases.json", function (data) {
 			);
 		}
 		else {
-			$("#case-list").append(`
+			$("#case-list").prepend(`
             <div class="case">
 				<a href="${cases[i].url}">
 					<img class="case-img" src="${cases[i].mdimg}">
