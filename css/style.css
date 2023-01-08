@@ -23,13 +23,13 @@ body {
 }
 
 #case-list {
-    padding-left: 2px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(160px,1fr));
+    padding-right: 8px;
 }
 
 .case {
-    display: inline-table;
     margin-left: 8px;
-    width: 160px;
     margin-bottom: 12px;
     background-color: #ffffff;
     box-shadow: 1px 1px 6px #bdbdbd;
@@ -43,8 +43,8 @@ body {
 }
 
 .case-img {
-    width: 160px;
-    height: 90px;
+    width: 100%;
+    aspect-ratio: 16/9;
 }
 
 .case-name {
